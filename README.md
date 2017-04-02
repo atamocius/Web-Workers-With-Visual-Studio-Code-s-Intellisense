@@ -2,7 +2,7 @@
 
 A sample project that illustrates how to structure your project when using Web Workers together with Visual Studio Code, TypeScript, and Webpack.
 
-# Blog post
+# Blog Post
 [Web Workers: Playing Nice With Visual Studio Code’s Intellisense](https://medium.com/@antonmata)
 
 # How To Build And Run
