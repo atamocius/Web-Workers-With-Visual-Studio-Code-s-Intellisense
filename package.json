@@ -1,0 +1,28 @@
+{
+  "name": "web-workers-with-visual-studio-code-s-intellisense",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack --debug --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonmata/Web-Workers-With-Visual-Studio-Code-s-Intellisense.git"
+  },
+  "author": "Anton Mata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonmata/Web-Workers-With-Visual-Studio-Code-s-Intellisense/issues"
+  },
+  "homepage": "https://github.com/antonmata/Web-Workers-With-Visual-Studio-Code-s-Intellisense#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "clean-webpack-plugin": "^0.1.16",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.2"
+  }
+}
