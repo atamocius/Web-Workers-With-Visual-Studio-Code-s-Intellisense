@@ -1,19 +1,26 @@
 "use strict";
 
-var path = require("path");
+let path = require("path");
+let CleanWebpackPlugin = require("clean-webpack-plugin");
 
-module.exports = function() {
+module.exports = () => {
     return {
-        entry: {
-            pi: "./js/workers/Pi.worker.ts",
-        },
+        entry: "./js/browser/index.ts",
 
         output: {
-            filename: "./js/[name].worker.js",
+            filename: "./js/bundle.js",
             path: path.resolve(__dirname, "../dist")
         },
 
         devtool: "cheap-module-source-map",
+
+        plugins: [
+            new CleanWebpackPlugin(["dist"], {
+                root: __dirname,
+                verbose: true,
+                dry: false
+            })
+        ],
 
         module: {
             rules: [
@@ -25,14 +32,14 @@ module.exports = function() {
                 {
                     test: /\.ts$/,
                     include: [
-                        path.resolve(__dirname, "../js/workers"),
+                        path.resolve(__dirname, "../js/browser"),
                         path.resolve(__dirname, "../js/common")
                     ],
                     loader: "awesome-typescript-loader",
                     options: {
-                        configFileName: "./js/workers/tsconfig.json"
+                        configFileName: "./js/browser/tsconfig.json"
                     }
-                },
+                }
             ]
         },
 
@@ -41,3 +48,4 @@ module.exports = function() {
         }
     };
 };
+
