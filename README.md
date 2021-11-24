@@ -2,7 +2,7 @@
 A sample project that illustrates how to structure your project when using Web Workers together with Visual Studio Code, TypeScript, and Webpack.
 
 # Blog Post
-[Web Workers: Playing Nice With Visual Studio Code’s Intellisense](https://www.antonmata.me/2017/04/04/web-workers-vscode-intellisense.html)
+[Web Workers: Playing Nice With Visual Studio Code’s Intellisense](https://github.com/atamocius/Web-Workers-With-Visual-Studio-Code-s-Intellisense/wiki/%5BBlog-Post%5D-Web-Workers:-Playing-Nice-With-Visual-Studio-Code%E2%80%99s-Intellisense)
 
 # Prerequisites
 * [Node](https://nodejs.org/en/)
